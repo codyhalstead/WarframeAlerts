@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black">
+
+    <LinearLayout
+        android:id="@+id/invasionRewardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/attackerRewardsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|bottom"
+            android:text="Fieldron"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/defenderRewardsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|bottom"
+            android:text="Detonite Injector"
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invasionFactionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invasionRewardContainer"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/defenderFactionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Corpus"
+            android:textColor="@color/lightGrey"
+            android:textSize="15sp"
+
+            />
+
+        <TextView
+            android:id="@+id/phoridTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/lightGrey"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/attackerFactionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Grineer"
+            android:textColor="@color/lightGrey"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/locationAndPercentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invasionProgressBar"
+        android:weightSum="2"
+        android:layout_marginBottom="25dp"
+        >
+
+
+
+        <TextView
+            android:id="@+id/defenderPercentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12%"
+            android:textColor="@color/lightGrey"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:gravity="left"
+            />
+
+        <TextView
+            android:id="@+id/invasionLocationtTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sol (Earth)"
+            android:textColor="@color/lightGrey"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:gravity="right"
+
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/invasionProgressBar"
+        android:layout_below="@+id/invasionFactionContainer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        />
+
+
+
+</RelativeLayout>

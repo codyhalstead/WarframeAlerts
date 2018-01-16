@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    android:weightSum="6">
+
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text=""
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_gravity="end|top"
+        android:gravity="end"
+        android:textColor="@color/lightGrey"
+        android:id="@+id/timeSinceMessagePostTextView"
+        android:text=""
+        android:textSize="15sp"
+        />
+
+</LinearLayout>

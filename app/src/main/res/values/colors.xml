@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="timerGreen">#3de540</color>
+    <color name="timerBlue">#0085ff</color>
+    <color name="timerRed">#ff0000</color>
+    <color name="infestedGreen">#32cd32</color>
+    <color name="corpusBlue">#00Bfff</color>
+    <color name="grineerRed">#ff0000</color>
+    <color name="unknownFactionColor">#fffacd</color>
+    <color name="lightGrey">#adb7b5</color>
+</resources>

@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ListPreference
+        android:dialogTitle="Choose Console"
+        android:entries="@array/platform_names"
+        android:entryValues="@array/platform_names"
+        android:defaultValue="@string/pc"
+        android:key="console_key"
+        android:summary="%s"
+        android:title="@string/select_console" />
+
+    <ListPreference
+        android:title="@string/select_data_refresh_rate"
+        android:entries="@array/data_refresh_rates_label"
+        android:entryValues="@array/data_refresh_rates_values"
+        android:defaultValue= "120"
+        android:summary="%s"
+        android:key="refresh_rate"
+        />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="rib"
+        android:summary="@string/rib_summary"
+        android:title="@string/enable_rib" />
+
+</PreferenceScreen>

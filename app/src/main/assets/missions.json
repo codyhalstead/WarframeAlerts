@@ -1,0 +1,18 @@
+{
+    "MT_ARENA": "Arena",
+    "MT_ASSASSINATION": "Assassination",
+    "MT_CAPTURE": "Capture",
+    "MT_COUNTER_INTEL": "Deception",
+    "MT_DEFENSE": "Defense",
+    "MT_EXCAVATE": "Excavation",
+    "MT_EXTERMINATION": "Exterminate",
+    "MT_HIVE": "Hive",
+    "MT_INTEL": "Spy",
+    "MT_MOBILE_DEFENSE": "Mobile Defense",
+    "MT_RESCUE": "Rescue",
+    "MT_RETRIEVAL": "Hijack",
+    "MT_SABOTAGE": "Sabotage",
+    "MT_SECTOR": "Sector Wars",
+    "MT_SURVIVAL": "Survival",
+    "MT_TERRITORY": "Interception"
+}

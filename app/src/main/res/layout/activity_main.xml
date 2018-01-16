@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.cody.warframealertapp.activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/warframeTextLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/warframenamelogo" />
+
+        <Button
+            android:id="@+id/viewAlertsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/warframeTextLogo"
+            android:layout_marginTop="20dp"
+            android:onClick="onAlertBtnClick"
+            android:text="@string/alerts"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/currentPlatformTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewInvasionsBtn"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/viewMessagesBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewAlertsBtn"
+            android:onClick="onMessageBtnClick"
+            android:text="@string/messages"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/viewInvasionsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewMessagesBtn"
+            android:onClick="onInvasionBtnClick"
+            android:text="@string/invasions"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:id="@+id/connectionStatusLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentPlatformTextView"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/networkStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/currentNetworkStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/isRIBEnabledTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connectionStatusLinearLayout"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/refreshRateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/isRIBEnabledTextView"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/optionsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/refreshRateTextView"
+            android:layout_marginTop="15dp"
+            android:onClick="openOptions"
+            android:text="@string/options" />
+
+    </RelativeLayout>
+</ScrollView>

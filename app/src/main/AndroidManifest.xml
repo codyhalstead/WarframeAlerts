@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.warframealertapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    >
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/credits"
+        android:label="@string/Warframe"
+        android:roundIcon="@drawable/credits"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/options"
+            android:theme="@style/PreferenceScreen"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.warframealertapp.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.warframealertapp.activities.InfoActivity"
+            android:label="@string/Warframe"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            >
+
+        </activity>
+        <activity
+            android:name="com.warframealertapp.activities.RenameActivity"
+            android:label="@string/rename_items"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" /> <!-- Your searchable file -->
+
+        </activity>
+        <activity
+            android:name="com.warframealertapp.activities.NotificationActivity"
+            android:label="@string/set_notifications"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+    </application>
+
+</manifest>

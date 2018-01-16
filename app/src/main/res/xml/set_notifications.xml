@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+
+
+    <!-- Allows the user to choose a ringtone in the 'notification' category. -->
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+    <PreferenceScreen android:title="@string/set_notifications">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.example.cody.warframealertapp.activities.NotificationActivity"
+            android:targetPackage="com.example.cody.warframealertapp">
+        </intent>
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/turn_all_notifications_on"
+        android:key="activateAllNotifications"
+        />
+    <Preference
+        android:title="Clear All Notifications"
+        android:key="clearAllNotifications"
+        />
+</PreferenceScreen>

@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <PreferenceScreen android:title="@string/rename_rewards">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.example.cody.warframealertapp.activities.RenameActivity"
+            android:targetPackage="com.example.cody.warframealertapp">
+            <extra
+                android:name="renameType"
+                android:value="reward" />
+        </intent>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/rename_factions">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.example.cody.warframealertapp.activities.RenameActivity"
+            android:targetPackage="com.example.cody.warframealertapp"
+            >
+            <extra
+                android:name="renameType"
+                android:value="faction" />
+        </intent>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/rename_mission_types">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.example.cody.warframealertapp.activities.RenameActivity"
+            android:targetPackage="com.example.cody.warframealertapp">
+            <extra
+                android:name="renameType"
+                android:value="missionType" />
+        </intent>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/rename_locations">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.example.cody.warframealertapp.activities.RenameActivity"
+            android:targetPackage="com.example.cody.warframealertapp">
+            <extra
+                android:name="renameType"
+                android:value="location" />
+        </intent>
+    </PreferenceScreen>
+    <Preference
+        android:title="@string/reset_all_to_default"
+        android:key="resetAllNamesToDefault"
+        />
+</PreferenceScreen>
